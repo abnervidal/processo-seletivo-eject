@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,700;1,700&display=swap');
+*{
+	scroll-behavior: smooth;
+}
+body{
+	font-family: 'Ubuntu', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+h1, h6{
+	margin: 0;
+}
+/*parte do nav*/
+#nav{
+	
+	height: 15vh;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+}
+.logotipo{
+	margin: 2.15%;
+}
+
+#nav ul{
+	display: flex;
+	margin-right: 150px;
+}
+
+#nav ul li{
+	list-style: none;
+	padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 110%;
+}
+#nav ul li a{
+	text-decoration: none;
+	color: black;
+}
+	#nav ul li a:hover{
+		border-bottom: 5px solid #cc0b15;
+		transition: all 0.2s ease-in-out 0s;
+		color: #cc0b15;
+	}
+#nav ul button {
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 25px;
+    background-color: #cc0b15;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    margin: auto 15px;
+    margin-left:10px ;
+	cursor: pointer;
+}
+.icone-menu{
+	display: none;
+}
+.botao-responsivo{
+	background-color: transparent;
+	color: #343538;
+	border: none;
+    font-size: 250%;
+	margin: 22px;
+}
+.menu-responsivo{
+	display: none;
+}
+.menu-responsivo ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.menu-responsivo ul li{
+	list-style: none;
+	padding: 3%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 120%;
+}
+.menu-responsivo ul li a{
+	text-decoration: none;
+	color: black;
+}
+.menu-responsivo ul button {
+	width: 150px;
+    height: 50px;
+    padding: 0 25px;
+    border-radius: 25px;
+    background-color: #cc0b15;
+    font-weight: bolder;
+    color: white;
+    border: none;
+    margin: auto 15px;
+    margin-left:10px ;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+/*parte do home*/
+#home{
+	width:100% ;
+	height: 85vh;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: color-dodge;
+	background-image: url(imagens/fotoesig01.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+#texthome{
+	position: relative;
+    text-align: center;
+    padding: 14% 0;
+    font-size: 200%;
+    opacity: 1.5;
+    color: white;
+}
+#texthome h1{
+	font-weight: blod;
+}
+#texthome h6{
+	margin:2% 0;
+	font-weight: lighter;
+}
+#texthome button{
+	font-family: 'Ubuntu', sans-serif;
+    background-color: #CC0B15;
+    border-radius: 27px;
+    padding: 1.5% 2%;
+    font-weight: bolder;
+    font-size: 50%;
+    color: white;
+    border: 1px solid #cc0b15;
+	cursor: pointer;
+}
+#texthome button{
+	text-decoration: none;
+}
+
+/*parte do solucoes*/
+#solucoes{
+	width:100% ;
+	height: 100vh;
+	background-color: rgb(240, 240, 240);
+}
+section h1{
+	text-align: center;
+	color: #343538;
+	padding: 5% 0 2% 0;
+	font-size: 300%;
+	font-weight: bold;
+}
+#grade01{
+	display: flex;
+}
+div.imagem{
+	width: 20vw;
+	margin: 0 2.5%;
+	text-align: center;
+}
+div.imagem h2{
+	font-weight: bold;
+	font-size: 150%;
+}
+div.imagem h6{
+	font-weight: lighter;
+	font-size: 120%;
+}
+div.imagem button{
+	color: #343538;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #cc0b15;
+    border-radius: 27px;
+    padding: 4% 8%;
+    font-size: 75%;
+    font-weight: bolder;
+    margin: 15% 0;
+}
+/*parte do clientes*/
+#clientes{
+	height: 100vh;
+	padding-bottom: 10px;
+	background-image: url(imagens/fundo3.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.carrossel01{
+	margin-top: 100px ;
+	margin-left:100px;
+	margin-right: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.carrossel01 img{
+	margin: 10px;
+}
+.slick-prev:before {
+	color: #343538 !important;
+	font-size: 50px !important;
+	margin-left: -25px !important;
+}
+.slick-next:before{
+	color: #343538 !important;
+	font-size: 50px !important;
+}
+
+/*parte do noticias*/
+#noticias{
+	width: 100%;
+	height: 100vh;
+	background-image: url(imagens/fundo2.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-color: white;
+}
+.grade-noticias{
+	display: flex;
+	justify-content: center;
+    padding: 2%;
+}
+.grade-noticias a{
+	text-decoration: none;
+}
+.news-grande{
+	width: 20vw;
+	height: 63vh;
+	margin: 10px;
+	background-image: url(https://site.esig.com.br/wp-content/uploads/2021/03/Frame-13-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border: 1px solid #343538;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: color-dodge;
+}
+.news-grande p{
+	margin-bottom: 100%;
+	
+}
+.abc{
+	width: 20vw;
+	height: 30vh;
+	margin: 5% 0;
+	border: 1px solid #343538;
+	border-radius: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-blend-mode: color-dodge;
+}
+.abc01{
+	background-image: url(https://site.esig.com.br/wp-content/uploads/2021/10/Sem-Titblogulo-1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.abc02{
+	background-image: url(https://site.esig.com.br/wp-content/uploads/2021/06/6b9a7de9857d547894e9d21871402422.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.abc03{
+	background-image: url(https://site.esig.com.br/wp-content/uploads/2021/03/desk-1.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.abc04{
+	background-image: url(https://site.esig.com.br/wp-content/uploads/2020/12/desk-1.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.abc p{
+	padding: 1%;
+	margin-bottom: 25%;
+}
+.botao-falso{
+	margin-left: inherit;
+    width: 30%;
+    background-color: #CC0B15;
+    border: none;
+    border-radius: 10px;
+    padding: 2%;
+    font-weight: bolder;
+    color: white;
+	text-align: center;
+}
+.titulo-materia{
+	color: #fff;
+	font-weight: bolder;
+	margin: inherit;
+}
+/*foms para contato*/
+.formulario{
+	height: 60vh;
+	color: white;
+	background-color: #343538;
+	margin: 0 auto;
+}
+.formulario h1{
+	color: #fff;
+}
+.form-principal{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+.form-principal div{
+	padding: 10px;
+	margin: 0 3%;
+	
+}
+.form-principal label{
+	font-weight: bolder;
+	padding: 3% 0;
+}
+.form-principal input{
+	width: 25vw;
+    height: 4vh;
+    border-radius: 15px;
+	padding: 0 3%;
+}
+.primeira-parte-form{
+	display: flex;
+	flex-direction: column;
+	
+}
+.segunda-parte-form{
+	display: flex;
+	flex-direction: column;
+	
+}
+#texto-form{
+	width: 30vw;
+	height: 20vh;
+	border-radius: 15px;
+    border: 1px solid black;
+    padding: 2%;
+	resize: none;
+}
+.segunda-parte-form button{
+	width: 30vw;
+    height: 5vh;
+    border-radius: 15px;
+    margin: 2% auto;
+    color: black;
+    background-color: white;
+    font-weight: bolder;
+}
+/*parte do rodape*/
+#rodape{
+	width:100% ;
+	height: 30vh;
+	background-color: #343538;
+	padding: 35px 0px;
+}
+#container01{
+	display: flex;
+	margin: 0 15%;
+	color: black;
+	border-bottom: 1px solid gray;
+	padding-bottom: 2%;
+}
+#container01 img{
+	width: 60%;
+}
+#container01 h6{
+	font-weight: bolder;
+	font-size: 100%;
+}
+#container01 a{
+	color: gray;
+}
+#container01 p{
+	font-weight: lighter;
+	color: gray;
+}
+#container01 section{
+	display: flex;
+}
+#container01 section button{
+	margin: auto 2%;
+	width: auto;
+    height: 4vh;
+    background-color: #cc0b15;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bolder;
+	font-size: 45%;
+}
+#container01 div{
+	width: 25%;
+}
+.divcontainer02{
+	margin: 0 5%;
+}
+#container02{
+	margin: 0 15%;
+	padding-top: 1%;
+}
+#container02 img{
+	width: 3%;
+	border-radius: 5px;
+}
+#container02 a{
+	color: black;
+	margin-left: 75%;
+}
+
+@media screen and (max-width:1025px) {
+	.container-nav{
+		width: 75vw;
+	}
+}
+@media screen and (max-width: 900px) {
+	.container-nav{
+		display: none;
+	}
+	.icone-menu{
+		display: block;
+	}
+	.open{
+		display: block;
+	}
+	.imagem{
+		width: 80vw;
+		height: 80vh;
+		margin:0 10px ;
+	}
+}
+@media screen and (max-width:745px){
+	.imagem{
+		width: 100vw;
+	}
+}
